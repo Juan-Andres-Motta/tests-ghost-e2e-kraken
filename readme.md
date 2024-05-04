@@ -1,36 +1,20 @@
-# Proyecto Base de Automatización
+# Proyecto E2E de automatización en kraken
 
-Este es un proyecto base para automatización de pruebas utilizando Kraken-Node.
+Este es un proyecto de automatización end-to-end (E2E) desarrollado utilizando Kraken, una plataforma de pruebas para aplicaciones web. El propósito de este proyecto es proporcionar un conjunto de pruebas automatizadas para garantizar la calidad y la integridad de una aplicación desarrollada con Kraken.
 
-## Pasos para crear el proyecto base:
+# Integrantes
+- Andres Duque
+- Juan Motta
 
-1. Desinstala las versiones globales de las herramientas que puedan estar instaladas:
-    ```bash
-    npm uninstall -g android-platform-tools
-    npm uninstall -g @cucumber/cucumber
-    npm uninstall -g kraken-node
-    npm uninstall -g appium
-    ```
+# Requisitos
+- Node 21
 
-2. Inicializa un nuevo proyecto npm:
-    ```bash
-    npm init -y
-    ```
-
-3. Instala las dependencias necesarias:
-    ```bash
-    npm install kraken-node
-    npm install android-platform-tools
-    npm install appium
-    ```
-
-4. Genera el esqueleto del proyecto con Kraken-Node:
-    ```bash
-    npx kraken-node gen
-    ```
-
-## Para ejecutar:
-
-Ejecuta las pruebas con el siguiente comando:
+# Instalación
+1. Instalar dependencias de node
 ```bash
+npm run install
+```
+2. Ejecutar pruebas
+```
 npx kraken-node run
+```
