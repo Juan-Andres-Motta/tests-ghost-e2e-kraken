@@ -1,4 +1,8 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
+const { faker } = require('@faker-js/faker');
+
+TITLE = faker.word.words(3)
+BODY = faker.lorem.paragraph(2)
 
 When('I enter my email {kraken-string}', async function (value) {
     let element = await this.driver.$('#identification');
@@ -25,15 +29,15 @@ Then('I click on new Post button', async function () {
     await newPostButton.click();
 });
 
-Then('I enter a title {kraken-string}', async function (value) {
+Then('I enter a title', async function () {
     let titleInput = await this.driver.$("textarea.gh-editor-title")
-    await titleInput.setValue(value);
+    await titleInput.setValue(TITLE);
 });
 
-Then('I enter a body {kraken-string}', async function (value) {
+Then('I enter a body', async function () {
     let bodyInput = await this.driver.$('div.kg-prose > p');
     await bodyInput.click();
-    await bodyInput.setValue(value);
+    await bodyInput.setValue(BODY);
 });
 
 Then('I click on Publish button', async function () {
