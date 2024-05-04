@@ -12,7 +12,7 @@ Este es un proyecto de automatización end-to-end (E2E) desarrollado utilizando 
 # Instalación
 1. Instalar dependencias de node
 ```bash
-npm run install
+npm install
 ```
 2. Ejecutar pruebas
 ```
