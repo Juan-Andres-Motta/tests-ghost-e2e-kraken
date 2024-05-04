@@ -1,5 +1,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { faker } = require('@faker-js/faker');
+const expect = require('chai').expect;
 
 TITLE = faker.word.words(3)
 BODY = faker.lorem.paragraph(2)
@@ -20,7 +21,7 @@ Then('I click on Login button', async function () {
 });
 
 Then('I click on Post button', async function () {
-    let postButton = await this.driver.$("#ember19")
+    let postButton = await this.driver.$('a[data-test-nav="posts"]')
     await postButton.click();
 });
 
@@ -53,4 +54,21 @@ Then('I click on Continue, final review', async function () {
 Then('I click on Publish post', async function () {
     let publishButton = await this.driver.$('button[data-test-button="confirm-publish"]')
     await publishButton.click();
+});
+
+Then('I click on back to dashboard', async function () {
+    let publishButton = await this.driver.$('a.gh-back-to-editor')
+    await publishButton.click();
+});
+
+Then('Find post', async function () {
+    let h3Found = false;
+    let publishButton = await this.driver.$$('h3')
+    for (let element of publishButton) {
+        if (await element.getText() == TITLE) {
+            h3Found = true;
+            break;
+        }
+    }
+    expect(h3Found).to.be.true;
 });
