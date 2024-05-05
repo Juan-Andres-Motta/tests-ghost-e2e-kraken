@@ -1,1 +1,1 @@
-Feature: Registarse en angular-6-registration-login-example
+Feature: Test Post Creation

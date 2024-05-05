@@ -3,3 +3,4 @@ reports/*
 .kraken/
 node_modules/
 features/BaseFeature.feature
+.DS_Store

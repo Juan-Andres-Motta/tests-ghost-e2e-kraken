@@ -1,4 +1,4 @@
-Feature: Registarse en angular-6-registration-login-example
+Feature: Test Post Creation
 
 @user1 @web
 Scenario: Rellenar formulario de registro
