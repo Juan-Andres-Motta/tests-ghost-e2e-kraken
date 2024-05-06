@@ -13,13 +13,25 @@ Feature: Tests playwright
         Then I click on back to posts 1
         Then Find post 1
 
-    Scenario Outline: Delete Post
-
-
-
     Scenario Outline: Update Post
+        When Login
+        Then I click on Post button 3
+        Then Find post 3
+        Then I enter a title 3
+        Then I enter a body 3
+        Then I click on update button 3
+        Then I click on back button 3
+        Then Find updated post 3
 
 
+    Scenario Outline: Delete Post
+        When Login
+        Then I click on Post button 2
+        Then Find post 2
+        Then I click on Post config button 2
+        Then I click on delete Post button 2
+        Then I click on confirm delete Post button 2
+        Then Find deleted post 2
 
     Scenario Outline: Create Tag
         When Login
@@ -54,16 +66,38 @@ Feature: Tests playwright
         Then I find the tag deleted 6
 
     Scenario Outline: Create Page
-
+        When Login
+        Then I click on Pages button 7
+        Then I click on new Page button 7
+        Then I enter a title 7
+        Then I enter a body 7
+        Then I click on Publish button 7
+        Then I click on Continue, final review 7
+        Then I click on Publish page 7
+        Then I click on back to dashboard 7
+        Then I click on Pages button 7
+        Then Find page 7
 
 
     Scenario Outline: Update Page
-
+        When Login
+        Then I click on page button 8
+        Then Find page 8
+        Then I click on page config button 8
+        Then I click on delete page button 8
+        Then I click on confirm delete page button 8
+        Then Find deleted page 8
 
 
     Scenario Outline: Delete Page
-
-
+        When Login
+        Then I click on page button 9
+        Then Find page 9
+        Then I enter a title 9
+        Then I enter a body 9
+        Then I click on update button 9
+        Then I click on back button 9
+        Then Find updated page 9
 
     Scenario Outline: Change Base Color
         When Login
@@ -71,3 +105,5 @@ Feature: Tests playwright
         Then I click on customize your design button 10
         Then I clear and enter an accent color input 10
         Then I click on Save button 10
+
+    
