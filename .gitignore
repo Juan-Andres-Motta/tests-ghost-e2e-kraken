@@ -5,3 +5,4 @@ reports/*
 .kraken/
 node_modules/
 .DS_Store
+scenarios.txt
