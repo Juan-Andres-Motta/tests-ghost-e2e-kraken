@@ -6,6 +6,8 @@ const { faker } = require("@faker-js/faker");
 let TITLE = faker.word.words(3);
 let BODY = faker.lorem.paragraph(2);
 
+// Scenario: Create a new post
+
 When("Login", async function (this: IPlaywrightWorld) {
   await this.page.goto("https://ghost.juanandresdeveloper.com/ghost/#/signin");
   await this.page.getByLabel("Email address").fill("admin@example.com");
@@ -88,3 +90,37 @@ Then('Find post 1', async function (this: IPlaywrightWorld) {
     }
     expect(h3Found).toBeTruthy();   
 });
+
+// Scenario: Create a new post
+
+
+
+// Scenario: Create a new post
+
+
+
+// Scenario: Create a new post
+
+
+
+// Scenario: Create a new post
+
+
+
+// Scenario: Create a new post
+
+
+
+// Scenario: Create a new post
+
+
+
+// Scenario: Create a new post
+
+
+
+// Scenario: Create a new post
+
+
+
+// Scenario: Create a new post

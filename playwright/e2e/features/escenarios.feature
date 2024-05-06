@@ -12,3 +12,39 @@ Feature: Tests playwright
         Then I click on back to dashboard 1
         Then I click on back to posts 1
         Then Find post 1
+
+    Scenario Outline: Delete Post
+
+
+
+    Scenario Outline: Update Post
+
+
+
+    Scenario Outline: Create Tag 
+
+
+
+    Scenario Outline: Update Tag 
+
+
+
+    Scenario Outline: Delete Tag
+
+
+
+    Scenario Outline: Create Page
+
+
+
+    Scenario Outline: Update Page
+
+
+
+    Scenario Outline: Delete Page
+
+
+
+    Scenario Outline: Change Base Color
+
+    
