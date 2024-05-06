@@ -2,8 +2,8 @@
 
 # Integrantes
 
-- Andres Duque
-- Juan Motta
+- Andres Duque - a.duquec@uniandes.edu.co
+- Juan Motta - ja.lopezm123@uniandes.edu.co
 
 ## Kraken
 
