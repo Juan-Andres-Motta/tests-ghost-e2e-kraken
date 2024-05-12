@@ -6,3 +6,5 @@ reports/*
 node_modules/
 .DS_Store
 scenarios.txt
+**/screenshots/*
+**/screenshots2/*
