@@ -1,0 +1,46 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Accent-color-input-10.png",
+      "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\Accent-color-input-10.png",
+      "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Accent-color-input-10.png",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "e2e/screenshots",
+    "bitmaps_test": "e2e/screenshots2",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": [
+    "browser"
+  ],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": [
+      "--no-sandbox",
+      "--allow-file-access-from-files"
+    ]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
