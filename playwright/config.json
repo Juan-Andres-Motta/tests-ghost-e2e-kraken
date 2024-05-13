@@ -1,0 +1,61 @@
+{
+	"url": "https://github.com/Juan-Andres-Motta/tests-ghost-e2e-kraken/tree/2.0.0",
+	"browsers": ["chromium"],
+	"escenarios": [
+		"Back-to-tags-5.png",
+		"Confirm-Delete-Post-button-2.png",
+		"Confirm-delete-button-tag-6.png",
+		"Delete-Post-button-2.png",
+		"Delete-button-6.png",
+		"Description-input-5.png",
+		"Login.png",
+		"Post-2.png",
+		"Post-3.png",
+		"Post-button-1.png",
+		"Post-button-2.png",
+		"Post-button-3.png",
+		"Post-config-button-2.png",
+		"Publish-button-1.png",
+		"Random-tag-5.png",
+		"Random-tag-6.png",
+		"Save-button-4.png",
+		"Save-button-5.png",
+		"Slug-input-5.png",
+		"Tag-color-input-5.png",
+		"Tag-name-input-5.png",
+		"Tags-button-4.png",
+		"Tags-button-5.png",
+		"Tags-button-6.png",
+		"back-button-3.png",
+		"back-to-posts-1.png",
+		"back-to-tags-4.png",
+		"body-1.png",
+		"body-3.png",
+		"description-input-4.png",
+		"new-Post-button-1.png",
+		"new-Tag-button-4.png",
+		"slug-input-4.png",
+		"tag-color-input-4.png",
+		"tag-name-input-4.png",
+		"title-1.png",
+		"title-3.png",
+		"update-button-3.png"
+	],
+	"options": {
+		"output": {
+			"errorColor": {
+				"red": 255,
+				"green": 0,
+				"blue": 255
+			},
+			"errorType": "movement",
+			"largeImageThreshold": 1200,
+			"useCrossOrigin": false,
+			"outputDiff": true
+		},
+		"scaleToSameSize": true,
+		"ignore": "antialiasing"
+	},
+	"viewportHeight": 720,
+	"viewportWidth": 1280
+}
