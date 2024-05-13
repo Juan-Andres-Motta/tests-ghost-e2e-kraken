@@ -13,7 +13,13 @@ Feature: Tests playwright
         Then I take a screenshot for visual regression body 1
         Then I click on Publish button 1
         Then I take a screenshot for visual regression Publish button 1
+        Then I click on Continue, final review 1
+        Then I take a screenshot for visual regression final review 1
+        Then I click on Publish post 1
+        Then I take a screenshot for visual regression Publish post 1
         Then I click on back to dashboard 1
+        Then I take a screenshot for visual regression back to dashboard 1
+        Then I click on back to posts 1
         Then I take a screenshot for visual regression back to posts 1
         Then Find post 1
 
@@ -69,6 +75,7 @@ Feature: Tests playwright
         Then Take screenshot for visual regression Save button 4
         Then I click on back to tags 4
         Then Take screenshot for visual regression back to tags 4
+        Then I find the tag created 4
 
     Scenario Outline: Update Tag
         When Login
@@ -89,6 +96,7 @@ Feature: Tests playwright
         Then Take screenshot for visual regression Save button 5
         Then I click on back to tags 5
         Then Take screenshot for visual regression back to tags 5
+        Then I find the tag created 5
 
     Scenario Outline: Delete Tag
         When Login
@@ -102,3 +110,4 @@ Feature: Tests playwright
         Then I click the confirm delete button tag 6
         Then Take screenshot for visual regression confirm delete button tag 6
         Then I find the tag deleted 6
+    
