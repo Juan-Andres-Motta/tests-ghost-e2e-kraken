@@ -3,15 +3,96 @@ report({
   "tests": [
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Back-to-tags-5png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Back-to-tags-5png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_back-button-3png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_back-button-3png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_back-button-3png_0_document_0_desktop.png",
+        "label": "back-button-3.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\back-button-3.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_back-button-3png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 13.778645833333334,
+          "misMatchPercentage": "13.78",
+          "analysisTime": 62
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_back-button-3png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_back-to-posts-1png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_back-to-posts-1png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_back-to-posts-1png_0_document_0_desktop.png",
+        "label": "back-to-posts-1.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\back-to-posts-1.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_back-to-posts-1png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 11.920030381944445,
+          "misMatchPercentage": "11.92",
+          "analysisTime": 34
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_back-to-posts-1png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_back-to-tags-4png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_back-to-tags-4png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_back-to-tags-4png_0_document_0_desktop.png",
+        "label": "back-to-tags-4.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\back-to-tags-4.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_back-to-tags-4png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 10.110568576388888,
+          "misMatchPercentage": "10.11",
+          "analysisTime": 43
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_back-to-tags-4png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Back-to-tags-5png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Back-to-tags-5png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_Back-to-tags-5png_0_document_0_desktop.png",
         "label": "Back-to-tags-5.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Back-to-tags-5.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Back-to-tags-5png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Back-to-tags-5.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Back-to-tags-5png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -20,25 +101,25 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 8.475260416666666,
-          "misMatchPercentage": "8.48",
-          "analysisTime": 367
+          "rawMisMatchPercentage": 10.10546875,
+          "misMatchPercentage": "10.11",
+          "analysisTime": 74
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Back-to-tags-5png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Back-to-tags-5png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_body-1png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_body-1png_0_document_0_desktop.png",
         "selector": "document",
-        "fileName": "backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png",
-        "label": "Confirm-Delete-Post-button-2.png",
+        "fileName": "backstop_default_body-1png_0_document_0_desktop.png",
+        "label": "body-1.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Confirm-Delete-Post-button-2.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\body-1.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_body-1png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -47,268 +128,52 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 88.45084635416667,
-          "misMatchPercentage": "88.45",
-          "analysisTime": 369
+          "rawMisMatchPercentage": 3.160698784722222,
+          "misMatchPercentage": "3.16",
+          "analysisTime": 56
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_body-1png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Confirm-delete-button-tag-6png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Confirm-delete-button-tag-6png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_body-3png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_body-3png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_body-3png_0_document_0_desktop.png",
+        "label": "body-3.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\body-3.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_body-3png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 2.327256944444444,
+          "misMatchPercentage": "2.33",
+          "analysisTime": 50
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_body-3png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Confirm-delete-button-tag-6png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Confirm-delete-button-tag-6png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_Confirm-delete-button-tag-6png_0_document_0_desktop.png",
         "label": "Confirm-delete-button-tag-6.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Confirm-delete-button-tag-6.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Confirm-delete-button-tag-6png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 8.126627604166666,
-          "misMatchPercentage": "8.13",
-          "analysisTime": 389
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Confirm-delete-button-tag-6png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Delete-Post-button-2png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Delete-Post-button-2png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Delete-Post-button-2png_0_document_0_desktop.png",
-        "label": "Delete-Post-button-2.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Delete-Post-button-2.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Delete-Post-button-2png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 99.74262152777777,
-          "misMatchPercentage": "99.74",
-          "analysisTime": 287
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Delete-Post-button-2png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Delete-button-6png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Delete-button-6png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Delete-button-6png_0_document_0_desktop.png",
-        "label": "Delete-button-6.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Delete-button-6.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Delete-button-6png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 91.43858506944444,
-          "misMatchPercentage": "91.44",
-          "analysisTime": 289
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Delete-button-6png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Description-input-5png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Description-input-5png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Description-input-5png_0_document_0_desktop.png",
-        "label": "Description-input-5.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Description-input-5.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Description-input-5png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 8.199869791666666,
-          "misMatchPercentage": "8.20",
-          "analysisTime": 449
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Description-input-5png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Loginpng_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Loginpng_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Loginpng_0_document_0_desktop.png",
-        "label": "Login.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Login.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Loginpng_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 4.766167534722222,
-          "misMatchPercentage": "4.77",
-          "analysisTime": 339
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Loginpng_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Post-2png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Post-2png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Post-2png_0_document_0_desktop.png",
-        "label": "Post-2.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Post-2.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Post-2png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 2.6077473958333335,
-          "misMatchPercentage": "2.61",
-          "analysisTime": 416
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Post-2png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Post-3png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Post-3png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Post-3png_0_document_0_desktop.png",
-        "label": "Post-3.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Post-3.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Post-3png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 2.824978298611111,
-          "misMatchPercentage": "2.82",
-          "analysisTime": 296
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Post-3png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Post-button-1png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Post-button-1png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Post-button-1png_0_document_0_desktop.png",
-        "label": "Post-button-1.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Post-button-1.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Post-button-1png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 3.463650173611111,
-          "misMatchPercentage": "3.46",
-          "analysisTime": 425
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Post-button-1png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Post-button-2png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Post-button-2png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Post-button-2png_0_document_0_desktop.png",
-        "label": "Post-button-2.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Post-button-2.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Post-button-2png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 9.5703125,
-          "misMatchPercentage": "9.57",
-          "analysisTime": 473
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Post-button-2png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Post-button-3png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Post-button-3png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Post-button-3png_0_document_0_desktop.png",
-        "label": "Post-button-3.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Post-button-3.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Post-button-3png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Confirm-delete-button-tag-6.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Confirm-delete-button-tag-6png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -319,23 +184,23 @@ report({
           },
           "rawMisMatchPercentage": 9.604817708333334,
           "misMatchPercentage": "9.60",
-          "analysisTime": 334
+          "analysisTime": 91
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Post-button-3png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Confirm-delete-button-tag-6png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Post-config-button-2png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Post-config-button-2png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png",
         "selector": "document",
-        "fileName": "backstop_default_Post-config-button-2png_0_document_0_desktop.png",
-        "label": "Post-config-button-2.png",
+        "fileName": "backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png",
+        "label": "Confirm-Delete-Post-button-2.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Post-config-button-2.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Post-config-button-2png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Confirm-Delete-Post-button-2.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -344,25 +209,25 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 5.396267361111111,
-          "misMatchPercentage": "5.40",
-          "analysisTime": 388
+          "rawMisMatchPercentage": 88.58973524305556,
+          "misMatchPercentage": "88.59",
+          "analysisTime": 67
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Post-config-button-2png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Confirm-Delete-Post-button-2png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Publish-button-1png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Publish-button-1png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Delete-button-6png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Delete-button-6png_0_document_0_desktop.png",
         "selector": "document",
-        "fileName": "backstop_default_Publish-button-1png_0_document_0_desktop.png",
-        "label": "Publish-button-1.png",
+        "fileName": "backstop_default_Delete-button-6png_0_document_0_desktop.png",
+        "label": "Delete-button-6.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Publish-button-1.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Publish-button-1png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Delete-button-6.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Delete-button-6png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -371,25 +236,25 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 7.421875,
-          "misMatchPercentage": "7.42",
-          "analysisTime": 173
+          "rawMisMatchPercentage": 89.92892795138889,
+          "misMatchPercentage": "89.93",
+          "analysisTime": 119
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Publish-button-1png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Delete-button-6png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Random-tag-5png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Random-tag-5png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Delete-Post-button-2png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Delete-Post-button-2png_0_document_0_desktop.png",
         "selector": "document",
-        "fileName": "backstop_default_Random-tag-5png_0_document_0_desktop.png",
-        "label": "Random-tag-5.png",
+        "fileName": "backstop_default_Delete-Post-button-2png_0_document_0_desktop.png",
+        "label": "Delete-Post-button-2.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Random-tag-5.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Random-tag-5png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Delete-Post-button-2.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Delete-Post-button-2png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -398,403 +263,25 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 7.752278645833334,
-          "misMatchPercentage": "7.75",
-          "analysisTime": 420
+          "rawMisMatchPercentage": 18.015625,
+          "misMatchPercentage": "18.02",
+          "analysisTime": 56
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Random-tag-5png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Delete-Post-button-2png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Random-tag-6png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Random-tag-6png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Random-tag-6png_0_document_0_desktop.png",
-        "label": "Random-tag-6.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Random-tag-6.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Random-tag-6png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 7.797309027777779,
-          "misMatchPercentage": "7.80",
-          "analysisTime": 560
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Random-tag-6png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Save-button-4png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Save-button-4png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Save-button-4png_0_document_0_desktop.png",
-        "label": "Save-button-4.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Save-button-4.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Save-button-4png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 7.876736111111112,
-          "misMatchPercentage": "7.88",
-          "analysisTime": 554
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Save-button-4png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Save-button-5png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Save-button-5png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Save-button-5png_0_document_0_desktop.png",
-        "label": "Save-button-5.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Save-button-5.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Save-button-5png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 8.009657118055555,
-          "misMatchPercentage": "8.01",
-          "analysisTime": 453
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Save-button-5png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Slug-input-5png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Slug-input-5png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Slug-input-5png_0_document_0_desktop.png",
-        "label": "Slug-input-5.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Slug-input-5.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Slug-input-5png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 8.194661458333332,
-          "misMatchPercentage": "8.19",
-          "analysisTime": 399
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Slug-input-5png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Tag-color-input-5png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Tag-color-input-5png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Tag-color-input-5png_0_document_0_desktop.png",
-        "label": "Tag-color-input-5.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Tag-color-input-5.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Tag-color-input-5png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 7.973524305555555,
-          "misMatchPercentage": "7.97",
-          "analysisTime": 517
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Tag-color-input-5png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Tag-name-input-5png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Tag-name-input-5png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Tag-name-input-5png_0_document_0_desktop.png",
-        "label": "Tag-name-input-5.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Tag-name-input-5.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Tag-name-input-5png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 8.077473958333334,
-          "misMatchPercentage": "8.08",
-          "analysisTime": 442
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Tag-name-input-5png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Tags-button-4png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Tags-button-4png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Tags-button-4png_0_document_0_desktop.png",
-        "label": "Tags-button-4.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Tags-button-4.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Tags-button-4png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 8.12087673611111,
-          "misMatchPercentage": "8.12",
-          "analysisTime": 422
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Tags-button-4png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Tags-button-5png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Tags-button-5png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Tags-button-5png_0_document_0_desktop.png",
-        "label": "Tags-button-5.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Tags-button-5.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Tags-button-5png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 8.472764756944445,
-          "misMatchPercentage": "8.47",
-          "analysisTime": 551
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Tags-button-5png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_Tags-button-6png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_Tags-button-6png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_Tags-button-6png_0_document_0_desktop.png",
-        "label": "Tags-button-6.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/Tags-button-6.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_Tags-button-6png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 8.471896701388888,
-          "misMatchPercentage": "8.47",
-          "analysisTime": 274
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_Tags-button-6png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_back-button-3png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_back-button-3png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_back-button-3png_0_document_0_desktop.png",
-        "label": "back-button-3.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/back-button-3.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_back-button-3png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 10.69140625,
-          "misMatchPercentage": "10.69",
-          "analysisTime": 450
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_back-button-3png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_back-to-posts-1png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_back-to-posts-1png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_back-to-posts-1png_0_document_0_desktop.png",
-        "label": "back-to-posts-1.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/back-to-posts-1.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_back-to-posts-1png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 11.664930555555555,
-          "misMatchPercentage": "11.66",
-          "analysisTime": 463
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_back-to-posts-1png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_back-to-tags-4png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_back-to-tags-4png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_back-to-tags-4png_0_document_0_desktop.png",
-        "label": "back-to-tags-4.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/back-to-tags-4.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_back-to-tags-4png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 8.448350694444445,
-          "misMatchPercentage": "8.45",
-          "analysisTime": 490
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_back-to-tags-4png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_body-1png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_body-1png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_body-1png_0_document_0_desktop.png",
-        "label": "body-1.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/body-1.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_body-1png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 3.1197916666666665,
-          "misMatchPercentage": "3.12",
-          "analysisTime": 494
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_body-1png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_body-3png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_body-3png_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "backstop_default_body-3png_0_document_0_desktop.png",
-        "label": "body-3.png",
-        "requireSameDimensions": 0.1,
-        "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/body-3.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_body-3png_0_document_0_desktop.png",
-        "expect": 0,
-        "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 5.578233506944445,
-          "misMatchPercentage": "5.58",
-          "analysisTime": 183
-        },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_body-3png_0_document_0_desktop.png"
-      },
-      "status": "fail"
-    },
-    {
-      "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_description-input-4png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_description-input-4png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_description-input-4png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_description-input-4png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_description-input-4png_0_document_0_desktop.png",
         "label": "description-input-4.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/description-input-4.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_description-input-4png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\description-input-4.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_description-input-4png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -803,25 +290,79 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 8.0390625,
-          "misMatchPercentage": "8.04",
-          "analysisTime": 465
+          "rawMisMatchPercentage": 8.332465277777777,
+          "misMatchPercentage": "8.33",
+          "analysisTime": 48
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_description-input-4png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_description-input-4png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_new-Post-button-1png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_new-Post-button-1png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Description-input-5png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Description-input-5png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Description-input-5png_0_document_0_desktop.png",
+        "label": "Description-input-5.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Description-input-5.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Description-input-5png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.21462673611111,
+          "misMatchPercentage": "8.21",
+          "analysisTime": 73
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Description-input-5png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Loginpng_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Loginpng_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Loginpng_0_document_0_desktop.png",
+        "label": "Login.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Login.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Loginpng_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 5.452365451388888,
+          "misMatchPercentage": "5.45",
+          "analysisTime": 138
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Loginpng_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_new-Post-button-1png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_new-Post-button-1png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_new-Post-button-1png_0_document_0_desktop.png",
         "label": "new-Post-button-1.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/new-Post-button-1.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_new-Post-button-1png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\new-Post-button-1.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_new-Post-button-1png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -830,25 +371,25 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.0896267361111112,
-          "misMatchPercentage": "1.09",
-          "analysisTime": 454
+          "rawMisMatchPercentage": 1.2076822916666667,
+          "misMatchPercentage": "1.21",
+          "analysisTime": 32
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_new-Post-button-1png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_new-Post-button-1png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_new-Tag-button-4png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_new-Tag-button-4png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_new-Tag-button-4png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_new-Tag-button-4png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_new-Tag-button-4png_0_document_0_desktop.png",
         "label": "new-Tag-button-4.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/new-Tag-button-4.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_new-Tag-button-4png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\new-Tag-button-4.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_new-Tag-button-4png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -857,25 +398,322 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 7.082790798611111,
-          "misMatchPercentage": "7.08",
-          "analysisTime": 129
+          "rawMisMatchPercentage": 7.324761284722222,
+          "misMatchPercentage": "7.32",
+          "analysisTime": 43
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_new-Tag-button-4png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_new-Tag-button-4png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_slug-input-4png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_slug-input-4png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Post-2png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Post-2png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Post-2png_0_document_0_desktop.png",
+        "label": "Post-2.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Post-2.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Post-2png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 2.3467881944444446,
+          "misMatchPercentage": "2.35",
+          "analysisTime": 62
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Post-2png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Post-3png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Post-3png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Post-3png_0_document_0_desktop.png",
+        "label": "Post-3.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Post-3.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Post-3png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 2.766384548611111,
+          "misMatchPercentage": "2.77",
+          "analysisTime": 34
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Post-3png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Post-button-1png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Post-button-1png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Post-button-1png_0_document_0_desktop.png",
+        "label": "Post-button-1.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Post-button-1.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Post-button-1png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 3.6524522569444446,
+          "misMatchPercentage": "3.65",
+          "analysisTime": 85
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Post-button-1png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Post-button-2png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Post-button-2png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Post-button-2png_0_document_0_desktop.png",
+        "label": "Post-button-2.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Post-button-2.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Post-button-2png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 10.4677734375,
+          "misMatchPercentage": "10.47",
+          "analysisTime": 37
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Post-button-2png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Post-button-3png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Post-button-3png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Post-button-3png_0_document_0_desktop.png",
+        "label": "Post-button-3.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Post-button-3.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Post-button-3png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 10.532552083333334,
+          "misMatchPercentage": "10.53",
+          "analysisTime": 76
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Post-button-3png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Post-config-button-2png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Post-config-button-2png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Post-config-button-2png_0_document_0_desktop.png",
+        "label": "Post-config-button-2.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Post-config-button-2.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Post-config-button-2png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 5.271701388888888,
+          "misMatchPercentage": "5.27",
+          "analysisTime": 66
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Post-config-button-2png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Publish-button-1png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Publish-button-1png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Publish-button-1png_0_document_0_desktop.png",
+        "label": "Publish-button-1.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Publish-button-1.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Publish-button-1png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 7.374131944444444,
+          "misMatchPercentage": "7.37",
+          "analysisTime": 67
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Publish-button-1png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Random-tag-5png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Random-tag-5png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Random-tag-5png_0_document_0_desktop.png",
+        "label": "Random-tag-5.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Random-tag-5.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Random-tag-5png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.044379340277779,
+          "misMatchPercentage": "8.04",
+          "analysisTime": 135
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Random-tag-5png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Random-tag-6png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Random-tag-6png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Random-tag-6png_0_document_0_desktop.png",
+        "label": "Random-tag-6.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Random-tag-6.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Random-tag-6png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.032660590277779,
+          "misMatchPercentage": "8.03",
+          "analysisTime": 94
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Random-tag-6png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Save-button-4png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Save-button-4png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Save-button-4png_0_document_0_desktop.png",
+        "label": "Save-button-4.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Save-button-4.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Save-button-4png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.257486979166668,
+          "misMatchPercentage": "8.26",
+          "analysisTime": 126
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Save-button-4png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Save-button-5png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Save-button-5png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Save-button-5png_0_document_0_desktop.png",
+        "label": "Save-button-5.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Save-button-5.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Save-button-5png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.28591579861111,
+          "misMatchPercentage": "8.29",
+          "analysisTime": 81
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Save-button-5png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_slug-input-4png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_slug-input-4png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_slug-input-4png_0_document_0_desktop.png",
         "label": "slug-input-4.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/slug-input-4.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_slug-input-4png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\slug-input-4.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_slug-input-4png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -884,25 +722,52 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 7.8671875,
-          "misMatchPercentage": "7.87",
-          "analysisTime": 301
+          "rawMisMatchPercentage": 7.966254340277777,
+          "misMatchPercentage": "7.97",
+          "analysisTime": 72
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_slug-input-4png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_slug-input-4png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_tag-color-input-4png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_tag-color-input-4png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Slug-input-5png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Slug-input-5png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Slug-input-5png_0_document_0_desktop.png",
+        "label": "Slug-input-5.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Slug-input-5.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Slug-input-5png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.29177517361111,
+          "misMatchPercentage": "8.29",
+          "analysisTime": 81
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Slug-input-5png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_tag-color-input-4png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_tag-color-input-4png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_tag-color-input-4png_0_document_0_desktop.png",
         "label": "tag-color-input-4.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/tag-color-input-4.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_tag-color-input-4png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\tag-color-input-4.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_tag-color-input-4png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -911,25 +776,52 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 7.381618923611111,
-          "misMatchPercentage": "7.38",
-          "analysisTime": 355
+          "rawMisMatchPercentage": 7.666883680555555,
+          "misMatchPercentage": "7.67",
+          "analysisTime": 90
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_tag-color-input-4png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_tag-color-input-4png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_tag-name-input-4png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_tag-name-input-4png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Tag-color-input-5png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Tag-color-input-5png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Tag-color-input-5png_0_document_0_desktop.png",
+        "label": "Tag-color-input-5.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Tag-color-input-5.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Tag-color-input-5png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.115885416666666,
+          "misMatchPercentage": "8.12",
+          "analysisTime": 99
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Tag-color-input-5png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_tag-name-input-4png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_tag-name-input-4png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_tag-name-input-4png_0_document_0_desktop.png",
         "label": "tag-name-input-4.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/tag-name-input-4.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_tag-name-input-4png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\tag-name-input-4.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_tag-name-input-4png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -938,25 +830,133 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 7.337999131944445,
-          "misMatchPercentage": "7.34",
-          "analysisTime": 127
+          "rawMisMatchPercentage": 7.636067708333333,
+          "misMatchPercentage": "7.64",
+          "analysisTime": 65
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_tag-name-input-4png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_tag-name-input-4png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_title-1png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_title-1png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Tag-name-input-5png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Tag-name-input-5png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Tag-name-input-5png_0_document_0_desktop.png",
+        "label": "Tag-name-input-5.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Tag-name-input-5.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Tag-name-input-5png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.32888454861111,
+          "misMatchPercentage": "8.33",
+          "analysisTime": 49
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Tag-name-input-5png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Tags-button-4png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Tags-button-4png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Tags-button-4png_0_document_0_desktop.png",
+        "label": "Tags-button-4.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Tags-button-4.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Tags-button-4png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 9.708875868055555,
+          "misMatchPercentage": "9.71",
+          "analysisTime": 51
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Tags-button-4png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Tags-button-5png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Tags-button-5png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Tags-button-5png_0_document_0_desktop.png",
+        "label": "Tags-button-5.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Tags-button-5.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Tags-button-5png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 10.122504340277779,
+          "misMatchPercentage": "10.12",
+          "analysisTime": 55
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Tags-button-5png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_Tags-button-6png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_Tags-button-6png_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "backstop_default_Tags-button-6png_0_document_0_desktop.png",
+        "label": "Tags-button-6.png",
+        "requireSameDimensions": 0.1,
+        "misMatchThreshold": 0.1,
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\Tags-button-6.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_Tags-button-6png_0_document_0_desktop.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 10.11111111111111,
+          "misMatchPercentage": "10.11",
+          "analysisTime": 38
+        },
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_Tags-button-6png_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_title-1png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_title-1png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_title-1png_0_document_0_desktop.png",
         "label": "title-1.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/title-1.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_title-1png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\title-1.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_title-1png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -965,25 +965,25 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.7099609375000002,
-          "misMatchPercentage": "1.71",
-          "analysisTime": 400
+          "rawMisMatchPercentage": 2.054253472222222,
+          "misMatchPercentage": "2.05",
+          "analysisTime": 32
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_title-1png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_title-1png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_title-3png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_title-3png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_title-3png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_title-3png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_title-3png_0_document_0_desktop.png",
         "label": "title-3.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/title-3.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_title-3png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\title-3.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_title-3png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -992,25 +992,25 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.6103515625,
-          "misMatchPercentage": "2.61",
-          "analysisTime": 381
+          "rawMisMatchPercentage": 2.3189019097222223,
+          "misMatchPercentage": "2.32",
+          "analysisTime": 39
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_title-3png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_title-3png_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../e2e/screenshots/backstop_default_update-button-3png_0_document_0_desktop.png",
-        "test": "../../e2e/screenshots2/20240512-231737/backstop_default_update-button-3png_0_document_0_desktop.png",
+        "reference": "..\\..\\e2e\\screenshots\\backstop_default_update-button-3png_0_document_0_desktop.png",
+        "test": "..\\..\\e2e\\screenshots2\\20240517-201508\\backstop_default_update-button-3png_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_update-button-3png_0_document_0_desktop.png",
         "label": "update-button-3.png",
         "requireSameDimensions": 0.1,
         "misMatchThreshold": 0.1,
-        "url": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots2/update-button-3.png",
-        "referenceUrl": "file:///Users/juan/Desktop/uniandes/pruebas-automatizadas/MyFirstKraken/playwright/e2e/screenshots/backstop_default_update-button-3png_0_document_0_desktop.png",
+        "url": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots2\\update-button-3.png",
+        "referenceUrl": "file://D:\\Backup\\MISO\\Pruebas Automatizadas\\tests-ghost-e2e-kraken\\playwright\\e2e\\screenshots\\backstop_default_update-button-3png_0_document_0_desktop.png",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -1019,11 +1019,11 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 9.463758680555557,
-          "misMatchPercentage": "9.46",
-          "analysisTime": 555
+          "rawMisMatchPercentage": 5.665581597222222,
+          "misMatchPercentage": "5.67",
+          "analysisTime": 52
         },
-        "diffImage": "../../e2e/screenshots2/20240512-231737/failed_diff_backstop_default_update-button-3png_0_document_0_desktop.png"
+        "diffImage": "..\\..\\e2e\\screenshots2\\20240517-201508\\failed_diff_backstop_default_update-button-3png_0_document_0_desktop.png"
       },
       "status": "fail"
     }

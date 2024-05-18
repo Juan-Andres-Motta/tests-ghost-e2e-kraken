@@ -15,14 +15,15 @@ let NAME: string | null = "";
 
 When("Login", async function (this: IPlaywrightWorld) {
 	await this.page.goto(
-		"https://ghostold.juanandresdeveloper.com/ghost/#/signin"
+		"https://ghost.juanandresdeveloper.com/ghost/#/signin"
 	);
-	await this.page.getByPlaceholder("Email Address").fill("admin@example.com");
-	await this.page.getByPlaceholder("Password").fill("admin12345");
+	await this.page.getByLabel("Email address").fill("admin@example.com");
+	await this.page.getByLabel("Password").fill("admin12345");
 	await this.page.getByRole("button", { name: /Sign in/i }).click();
 	await this.page.waitForURL(
-		`https://ghostold.juanandresdeveloper.com/ghost/#/site`
+		`https://ghost.juanandresdeveloper.com/ghost/#/dashboard`
 	);
+	await this.page.waitForTimeout(2000);
 });
 
 Then(
@@ -33,7 +34,7 @@ Then(
 );
 
 Then("I click on Post button 1", async function (this: IPlaywrightWorld) {
-	let postButton = await this.page.$('a[href="#/posts/"]');
+	let postButton = await this.page.$('a[data-test-nav="posts"]');
 	if (postButton) {
 		await postButton!.click();
 	}
@@ -49,7 +50,7 @@ Then(
 );
 
 Then("I click on new Post button 1", async function (this: IPlaywrightWorld) {
-	let newPostButton = await this.page.$('a[href="#/editor/post/"]');
+	let newPostButton = await this.page.$("a.ember-view.gh-btn.gh-btn-primary");
 	if (newPostButton) {
 		await newPostButton.click();
 	}
@@ -65,9 +66,7 @@ Then(
 );
 
 Then("I enter a title 1", async function (this: IPlaywrightWorld) {
-	await this.page.waitForTimeout(2000);
-	let titleInput = await this.page.$('textarea[placeholder="Post Title"]');
-	TITLE = faker.word.words(3);
+	let titleInput = await this.page.$("textarea.gh-editor-title");
 	await titleInput!.fill(TITLE);
 });
 
@@ -80,9 +79,7 @@ Then(
 
 Then("I enter a body 1", async function (this: IPlaywrightWorld) {
 	await this.page.waitForTimeout(2000);
-	let bodyInput = await this.page.$(
-		'div[data-placeholder="Begin writing your post..."]'
-	);
+	let bodyInput = await this.page.$("div.kg-prose > p");
 	await bodyInput!.click();
 	await bodyInput!.fill(BODY);
 	await this.page.waitForTimeout(2000);
@@ -96,11 +93,10 @@ Then(
 );
 
 Then("I click on Publish button 1", async function (this: IPlaywrightWorld) {
-	let publishButton1 = await this.page.$("div.ember-basic-dropdown-trigger");
-	await publishButton1!.click();
-	await this.page.waitForTimeout(2000);
-	let publishButton2 = await this.page.$("button.gh-publishmenu-button");
-	await publishButton2!.click();
+	let publishButton = await this.page.$(
+		'button[data-test-button="publish-flow"]'
+	);
+	await publishButton!.click();
 	await this.page.waitForTimeout(2000);
 });
 
@@ -148,7 +144,7 @@ Then(
 );
 
 Then("I click on back to dashboard 1", async function (this: IPlaywrightWorld) {
-	let publishButton = await this.page.$('a[href="#/posts/"]');
+	let publishButton = await this.page.$("button[data-test-button='close-publish-flow']");
 	await publishButton!.click();
 	await this.page.waitForTimeout(2000);
 });
@@ -191,10 +187,8 @@ Then("Find post 1", async function (this: IPlaywrightWorld) {
 // Scenario: Delete post
 
 Then("I click on Post button 2", async function (this: IPlaywrightWorld) {
-	let newPostButton = await this.page.$('a[href="#/posts/"]');
-	if (newPostButton) {
-		await newPostButton.click();
-	}
+	let postButton = await this.page.$('a[data-test-nav="posts"]');
+	await postButton!.click();
 	await this.page.waitForTimeout(2000);
 });
 
@@ -225,9 +219,8 @@ Then(
 Then(
 	"I click on Post config button 2",
 	async function (this: IPlaywrightWorld) {
-		let postButton = await this.page.$("button.post-settings");
+		let postButton = await this.page.$("button.settings-menu-toggle");
 		await postButton!.click();
-		await this.page.waitForTimeout(2000);
 	}
 );
 
@@ -244,10 +237,9 @@ Then(
 	"I click on delete Post button 2",
 	async function (this: IPlaywrightWorld) {
 		let postButton = await this.page.$(
-			"button.settings-menu-delete-button"
+			"div.settings-menu-delete-button > button"
 		);
 		await postButton!.click();
-		await this.page.waitForTimeout(2000);
 	}
 );
 
@@ -263,9 +255,10 @@ Then(
 Then(
 	"I click on confirm delete Post button 2",
 	async function (this: IPlaywrightWorld) {
-		let postButton = await this.page.$("button.gh-btn-red");
+		let postButton = await this.page.$(
+			"div.modal-footer > button.gh-btn-red"
+		);
 		await postButton!.click();
-		await this.page.waitForTimeout(2000);
 	}
 );
 
@@ -302,10 +295,8 @@ Then(
 // Scenario: Update post
 
 Then("I click on Post button 3", async function (this: IPlaywrightWorld) {
-	let postButton = await this.page.$('a[href="#/posts/"]');
-	if (postButton) {
-		await postButton!.click();
-	}
+	let postButton = await this.page.$('a[data-test-nav="posts"]');
+	await postButton!.click();
 	await this.page.waitForTimeout(2000);
 });
 
@@ -332,8 +323,8 @@ Then(
 );
 
 Then("I enter a title 3", async function (this: IPlaywrightWorld) {
-	let titleInput = await this.page.$('textarea[placeholder="Post Title"]');
-	TITLE = faker.random.word(3);
+	let titleInput = await this.page.$("textarea.gh-editor-title");
+	TITLE = faker.word.words(3);
 	await titleInput!.fill(TITLE);
 });
 
@@ -345,9 +336,7 @@ Then(
 );
 
 Then("I enter a body 3", async function (this: IPlaywrightWorld) {
-	let bodyInput = await this.page.$(
-		'div[data-placeholder="Begin writing your post..."]'
-	);
+	let bodyInput = await this.page.$("div.kg-prose > p");
 	await bodyInput!.click();
 	await bodyInput!.fill(BODY);
 });
@@ -360,12 +349,10 @@ Then(
 );
 
 Then("I click on update button 3", async function (this: IPlaywrightWorld) {
-	let publishButton1 = await this.page.$("div.ember-basic-dropdown-trigger");
-	await publishButton1!.click();
-	await this.page.waitForTimeout(2000);
-	let publishButton2 = await this.page.$("button.gh-publishmenu-button");
-	await publishButton2!.click();
-	await this.page.waitForTimeout(2000);
+	let publishButton =
+		(await this.page.$('button[data-test-button="publish-flow"]')) ||
+		(await this.page.$('button[data-test-button="publish-save"]'));
+	await publishButton!.click();
 });
 
 Then(
@@ -378,9 +365,8 @@ Then(
 );
 
 Then("I click on back button 3", async function (this: IPlaywrightWorld) {
-	let publishButton = await this.page.$('a[href="#/posts/"]');
+	let publishButton = await this.page.$("button[data-test-button='close-publish-flow']");
 	await publishButton!.click();
-	await this.page.waitForTimeout(2000);
 });
 
 Then(
@@ -649,7 +635,7 @@ Then("Find deleted page 8", async function (this: IPlaywrightWorld) {
 // Scenario: Create a new tag
 
 Then("I click on Tags button 4", async function (this: IPlaywrightWorld) {
-	let tagsButton = await this.page.$('a[href="#/tags/"]');
+	let tagsButton = await this.page.$('a[data-test-nav="tags"]');
 	if (tagsButton) {
 		await tagsButton.click();
 	}
@@ -683,8 +669,7 @@ Then(
 );
 
 Then("I enter a tag name input 4", async function (this: IPlaywrightWorld) {
-	let tagNameInput = await this.page.$("input#tag-name");
-	let NAME4 = faker.lorem.word();
+	let tagNameInput = await this.page.$('input[data-test-input="tag-name"]');
 	if (tagNameInput) {
 		await tagNameInput.fill(NAME4);
 	}
@@ -701,7 +686,9 @@ Then(
 );
 
 Then("I enter a tag color input 4", async function (this: IPlaywrightWorld) {
-	let tagColorInput = await this.page.$('input[name="accent-color"]');
+	let tagColorInput = await this.page.$(
+		'input[data-test-input="accentColor"]'
+	);
 	if (tagColorInput) {
 		await tagColorInput.fill(faker.internet.color().slice(1, 7));
 	}
@@ -718,7 +705,7 @@ Then(
 );
 
 Then("I enter a slug input 4", async function (this: IPlaywrightWorld) {
-	let slugInput = await this.page.$("input#tag-slug");
+	let slugInput = await this.page.$('input[data-test-input="tag-slug"]');
 	if (slugInput) {
 		await slugInput.fill(faker.lorem.word());
 	}
@@ -735,7 +722,9 @@ Then(
 );
 
 Then("I enter a description input 4", async function (this: IPlaywrightWorld) {
-	let descriptionInput = await this.page.$("textarea#tag-description");
+	let descriptionInput = await this.page.$(
+		'textarea[data-test-input="tag-description"]'
+	);
 	if (descriptionInput) {
 		await descriptionInput.fill(faker.lorem.sentence());
 	}
@@ -752,7 +741,7 @@ Then(
 );
 
 Then("I click on Save button 4", async function (this: IPlaywrightWorld) {
-	let saveButton = await this.page.$("button.gh-btn-blue");
+	let saveButton = await this.page.$('button[data-test-button="save"]');
 	if (saveButton) {
 		await saveButton.click();
 	}
@@ -769,9 +758,9 @@ Then(
 );
 
 Then("I click on back to tags 4", async function (this: IPlaywrightWorld) {
-	let tagsButton = await this.page.$('a[href="#/tags/"]');
-	if (tagsButton) {
-		await tagsButton.click();
+	let backToTagsButton = await this.page.$('a[href="#/tags/"]');
+	if (backToTagsButton) {
+		await backToTagsButton.click();
 	}
 	await this.page.waitForTimeout(2000);
 });
@@ -801,10 +790,7 @@ Then("I find the tag created 4", async function (this: IPlaywrightWorld) {
 // Scenario: Update a tag
 
 Then("I click on tags button 5", async function (this: IPlaywrightWorld) {
-	let tagsButton = await this.page.$('a[href="#/tags/"]');
-	if (tagsButton) {
-		await tagsButton.click();
-	}
+	await this.page.click('a[href="#/tags/"]');
 	await this.page.waitForTimeout(1000);
 });
 
@@ -836,7 +822,9 @@ Then(
 Then(
 	"I clear and enter a tag name input 5",
 	async function (this: IPlaywrightWorld) {
-		let tagNameInput = await this.page.$("input#tag-name");
+		let tagNameInput = await this.page.$(
+			'input[data-test-input="tag-name"]'
+		);
 		await tagNameInput!.fill(NAME5);
 		await this.page.waitForTimeout(1000);
 	}
@@ -854,7 +842,9 @@ Then(
 Then(
 	"I clear and enter a tag color input 5",
 	async function (this: IPlaywrightWorld) {
-		let tagColorInput = await this.page.$('input[name="accent-color"]');
+		let tagColorInput = await this.page.$(
+			'input[data-test-input="accentColor"]'
+		);
 		await tagColorInput!.fill(faker.internet.color().slice(1, 7));
 		await this.page.waitForTimeout(1000);
 	}
@@ -872,10 +862,8 @@ Then(
 Then(
 	"I clear and enter a slug input 5",
 	async function (this: IPlaywrightWorld) {
-		let slugInput = await this.page.$("input#tag-slug");
-		if (slugInput) {
-			await slugInput.fill(faker.lorem.word());
-		}
+		let slugInput = await this.page.$('input[data-test-input="tag-slug"]');
+		await slugInput!.fill(faker.lorem.word());
 		await this.page.waitForTimeout(1000);
 	}
 );
@@ -892,10 +880,10 @@ Then(
 Then(
 	"I clear and enter a description input 5",
 	async function (this: IPlaywrightWorld) {
-		let descriptionInput = await this.page.$("textarea#tag-description");
-		if (descriptionInput) {
-			await descriptionInput.fill(faker.lorem.sentence());
-		}
+		let descriptionInput = await this.page.$(
+			'textarea[data-test-input="tag-description"]'
+		);
+		await descriptionInput!.fill(faker.lorem.sentence());
 		await this.page.waitForTimeout(1000);
 	}
 );
@@ -910,10 +898,8 @@ Then(
 );
 
 Then("I click on Save button 5", async function (this: IPlaywrightWorld) {
-	let saveButton = await this.page.$("button.gh-btn-blue");
-	if (saveButton) {
-		await saveButton.click();
-	}
+	let saveButton = await this.page.$('button[data-test-button="save"]');
+	await saveButton!.click();
 	await this.page.waitForTimeout(1000);
 });
 
@@ -927,10 +913,8 @@ Then(
 );
 
 Then("I click on back to tags 5", async function (this: IPlaywrightWorld) {
-	let tagsButton = await this.page.$('a[href="#/tags/"]');
-	if (tagsButton) {
-		await tagsButton.click();
-	}
+	let backToTagsButton = await this.page.$('a[href="#/tags/"]');
+	await backToTagsButton!.click();
 	await this.page.waitForTimeout(1000);
 });
 
@@ -959,10 +943,7 @@ Then("I find the tag created 5", async function (this: IPlaywrightWorld) {
 // Scenario: Delete a tag
 
 Then("I click on tags button 6", async function (this: IPlaywrightWorld) {
-	let tagsButton = await this.page.$('a[href="#/tags/"]');
-	if (tagsButton) {
-		await tagsButton.click();
-	}
+	await this.page.click('a[href="#/tags/"]');
 	await this.page.waitForTimeout(1000);
 });
 
@@ -993,7 +974,9 @@ Then(
 );
 
 Then("I click on Delete button 6", async function (this: IPlaywrightWorld) {
-	let deleteButton = await this.page.$("button.gh-btn-red");
+	let deleteButton = await this.page.$(
+		'button[data-test-button="delete-tag"]'
+	);
 	await deleteButton!.click();
 	await this.page.waitForTimeout(1000);
 });
@@ -1010,11 +993,10 @@ Then(
 Then(
 	"I click the confirm delete button tag 6",
 	async function (this: IPlaywrightWorld) {
-		let confirmButton = await this.page.getByRole("button", {
-			name: "Delete",
-			exact: true,
-		});
-		await confirmButton!.click({ force: true });
+		let confirmButton = await this.page.$(
+			'button[data-test-button="confirm"]'
+		);
+		await confirmButton!.click();
 		await this.page.waitForTimeout(1000);
 	}
 );

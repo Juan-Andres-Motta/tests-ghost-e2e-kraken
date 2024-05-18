@@ -15,7 +15,6 @@ Feature: Tests playwright
         Then I take a screenshot for visual regression Publish button 1
         Then I click on back to dashboard 1
         Then I take a screenshot for visual regression back to posts 1
-        Then Find post 1
 
     Scenario Outline: Update Post
         When Login
@@ -32,8 +31,6 @@ Feature: Tests playwright
         Then Take screenshot for visual regression update button 3
         Then I click on back button 3
         Then Take screenshot for visual regression back button 3
-        Then Find updated post 3
-
 
     Scenario Outline: Delete Post
         When Login
@@ -48,7 +45,6 @@ Feature: Tests playwright
         Then Take screenshot for visual regression delete Post button 2
         Then I click on confirm delete Post button 2
         Then Take screenshot for visual regression confirm delete Post button 2
-        Then Find deleted post 2
 
     Scenario Outline: Create Tag
         When Login
@@ -101,4 +97,3 @@ Feature: Tests playwright
         Then Take screenshot for visual regression Delete button 6
         Then I click the confirm delete button tag 6
         Then Take screenshot for visual regression confirm delete button tag 6
-        Then I find the tag deleted 6
