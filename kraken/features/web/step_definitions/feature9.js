@@ -2,8 +2,8 @@ const { Given, When, Then } = require('@cucumber/cucumber');
 const { faker } = require('@faker-js/faker');
 const expect = require('chai').expect;
 
-TITLE = faker.lorem.words(3);
-BODY = faker.lorem.words(20);
+TITLE = null;
+BODY = null;
 
 When('I enter my email {kraken-string} 9', async function (value) {
     let element = await this.driver.$('#identification');
@@ -32,11 +32,13 @@ Then('Find page 9', async function () {
 });
 
 Then('I enter a title 9', async function () {
+    TITLE = faker.lorem.words(3);
     let titleInput = await this.driver.$("textarea.gh-editor-title")
     await titleInput.setValue(TITLE);
 });
 
 Then('I enter a body 9', async function () {
+    BODY = faker.lorem.words(20);
     let bodyInput = await this.driver.$('div.kg-prose > p');
     await bodyInput.click();
     await bodyInput.setValue(BODY);

@@ -2,8 +2,8 @@ const { Given, When, Then } = require('@cucumber/cucumber');
 const { faker } = require('@faker-js/faker');
 const expect = require('chai').expect;
 
-TITLE = faker.lorem.words(3);
-BODY = faker.lorem.words(20);
+TITLE = null;
+BODY = null;
 
 When('I enter my email {kraken-string} 3', async function (value) {
     let element = await this.driver.$('#identification');
@@ -26,24 +26,33 @@ Then('I click on Post button 3', async function () {
 });
 
 Then('Find post 3', async function () {
-    let postButton = await this.driver.$('h3')
-    NAME = await postButton.getText();
-    await postButton.click();
+    let postButtons = await this.driver.$$('h3');
+    if (postButtons.length > 0) {
+        // Select the last h3 element
+        let postButton = postButtons[postButtons.length - 1];
+
+        // Store the name
+        NAME = await postButton.getText();
+        // Click the postButton
+        await postButton.click();
+    }
 });
 
 Then('I enter a title 3', async function () {
+    TITLE = faker.lorem.words(3);
     let titleInput = await this.driver.$("textarea.gh-editor-title")
     await titleInput.setValue(TITLE);
 });
 
 Then('I enter a body 3', async function () {
+    BODY = faker.lorem.words(20);
     let bodyInput = await this.driver.$('div.kg-prose > p');
     await bodyInput.click();
     await bodyInput.setValue(BODY);
 });
 
 Then('I click on update button 3', async function () {
-    let publishButton = await this.driver.$('button[data-test-button="publish-save"]')
+    let publishButton = await this.driver.$('button.gh-btn-editor.green')
     await publishButton.click();
 });
 

@@ -1,15 +1,15 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
 import { expect, Page } from "@playwright/test";
 import { IPlaywrightWorld } from "../world";
-const { faker } = require("@faker-js/faker");
+import { faker } from "@faker-js/faker";
 
-let TITLE = faker.word.words(3);
-let BODY = faker.lorem.paragraph(2);
-let NAME4 = faker.lorem.word();
-let NAME5 = faker.lorem.word();
-let NAME6 = "";
+var TITLE: string = "";
+var BODY: string = "";
+var NAME4: string = "";
+var NAME5: string = "";
+var NAME6: string = "";
 
-let NAME: string | null = "";
+var NAME: string = "";
 
 // Scenario: Create a new post
 
@@ -23,7 +23,6 @@ When("Login", async function (this: IPlaywrightWorld) {
 	await this.page.waitForURL(
 		`https://ghost.juanandresdeveloper.com/ghost/#/dashboard`
 	);
-	await this.page.waitForTimeout(2000);
 });
 
 Then(
@@ -66,8 +65,11 @@ Then(
 );
 
 Then("I enter a title 1", async function (this: IPlaywrightWorld) {
+	faker.seed(Math.random() * 1000);
+	TITLE = faker.word.words();
 	let titleInput = await this.page.$("textarea.gh-editor-title");
 	await titleInput!.fill(TITLE);
+	await this.page.waitForTimeout(2000);
 });
 
 Then(
@@ -78,8 +80,8 @@ Then(
 );
 
 Then("I enter a body 1", async function (this: IPlaywrightWorld) {
-	await this.page.waitForTimeout(2000);
 	let bodyInput = await this.page.$("div.kg-prose > p");
+	BODY = faker.lorem.paragraph(2);
 	await bodyInput!.click();
 	await bodyInput!.fill(BODY);
 	await this.page.waitForTimeout(2000);
@@ -144,7 +146,7 @@ Then(
 );
 
 Then("I click on back to dashboard 1", async function (this: IPlaywrightWorld) {
-	let publishButton = await this.page.$("button[data-test-button='close-publish-flow']");
+	let publishButton = await this.page.$("a.gh-back-to-editor");
 	await publishButton!.click();
 	await this.page.waitForTimeout(2000);
 });
@@ -182,6 +184,7 @@ Then("Find post 1", async function (this: IPlaywrightWorld) {
 		}
 	}
 	expect(h3Found).toBeTruthy();
+	await this.page.waitForTimeout(2000);
 });
 
 // Scenario: Delete post
@@ -221,6 +224,7 @@ Then(
 	async function (this: IPlaywrightWorld) {
 		let postButton = await this.page.$("button.settings-menu-toggle");
 		await postButton!.click();
+		await this.page.waitForTimeout(2000);
 	}
 );
 
@@ -240,6 +244,7 @@ Then(
 			"div.settings-menu-delete-button > button"
 		);
 		await postButton!.click();
+		await this.page.waitForTimeout(2000);
 	}
 );
 
@@ -259,6 +264,7 @@ Then(
 			"div.modal-footer > button.gh-btn-red"
 		);
 		await postButton!.click();
+		await this.page.waitForTimeout(2000);
 	}
 );
 
@@ -281,6 +287,7 @@ Then("Find deleted post 2", async function (this: IPlaywrightWorld) {
 		}
 	}
 	expect(h3Found).toBeFalsy();
+	await this.page.waitForTimeout(2000);
 });
 
 Then(
@@ -323,9 +330,11 @@ Then(
 );
 
 Then("I enter a title 3", async function (this: IPlaywrightWorld) {
+	faker.seed(Math.random() * 1000);
 	let titleInput = await this.page.$("textarea.gh-editor-title");
-	TITLE = faker.word.words(3);
+	TITLE = `${faker.word.adjective()} ${faker.word.noun()}`;
 	await titleInput!.fill(TITLE);
+	await this.page.waitForTimeout(2000);
 });
 
 Then(
@@ -338,7 +347,9 @@ Then(
 Then("I enter a body 3", async function (this: IPlaywrightWorld) {
 	let bodyInput = await this.page.$("div.kg-prose > p");
 	await bodyInput!.click();
+	BODY = faker.lorem.paragraph(2);
 	await bodyInput!.fill(BODY);
+	await this.page.waitForTimeout(2000);
 });
 
 Then(
@@ -353,6 +364,7 @@ Then("I click on update button 3", async function (this: IPlaywrightWorld) {
 		(await this.page.$('button[data-test-button="publish-flow"]')) ||
 		(await this.page.$('button[data-test-button="publish-save"]'));
 	await publishButton!.click();
+	await this.page.waitForTimeout(2000);
 });
 
 Then(
@@ -365,8 +377,9 @@ Then(
 );
 
 Then("I click on back button 3", async function (this: IPlaywrightWorld) {
-	let publishButton = await this.page.$("button[data-test-button='close-publish-flow']");
+	let publishButton = await this.page.$("a.gh-editor-back-button");
 	await publishButton!.click();
+	await this.page.waitForTimeout(2000);
 });
 
 Then(
@@ -389,6 +402,7 @@ Then("Find updated post 3", async function (this: IPlaywrightWorld) {
 		}
 	}
 	expect(h3Found).toBeTruthy();
+	await this.page.waitForTimeout(2000);
 });
 
 // Scenario: Create a new page
@@ -424,7 +438,9 @@ Then(
 );
 
 Then("I enter a title 7", async function (this: IPlaywrightWorld) {
+	faker.seed(Math.random() * 1000);
 	let titleInput = await this.page.$("textarea.gh-editor-title");
+	TITLE = faker.word.words(3);
 	await titleInput!.fill(TITLE);
 	await this.page.waitForTimeout(1000);
 });
@@ -669,8 +685,10 @@ Then(
 );
 
 Then("I enter a tag name input 4", async function (this: IPlaywrightWorld) {
+	faker.seed(Math.random() * 1000);
 	let tagNameInput = await this.page.$('input[data-test-input="tag-name"]');
 	if (tagNameInput) {
+		NAME4 = faker.lorem.word();
 		await tagNameInput.fill(NAME4);
 	}
 	await this.page.waitForTimeout(2000);
@@ -822,9 +840,11 @@ Then(
 Then(
 	"I clear and enter a tag name input 5",
 	async function (this: IPlaywrightWorld) {
+		faker.seed(Math.random() * 1000);
 		let tagNameInput = await this.page.$(
 			'input[data-test-input="tag-name"]'
 		);
+		NAME5 = faker.lorem.word();
 		await tagNameInput!.fill(NAME5);
 		await this.page.waitForTimeout(1000);
 	}
@@ -1056,7 +1076,9 @@ Then(
 );
 
 Then("I enter a title 9", async function (this: IPlaywrightWorld) {
+	faker.seed(Math.random() * 1000);
 	let titleInput = await this.page.$("textarea.gh-editor-title");
+	TITLE = faker.word.words(3);
 	await titleInput!.fill(TITLE);
 	await this.page.waitForTimeout(1000);
 });
@@ -1073,6 +1095,7 @@ Then(
 Then("I enter a body 9", async function (this: IPlaywrightWorld) {
 	let bodyInput = await this.page.$("div.kg-prose > p");
 	await bodyInput!.click();
+	BODY = faker.lorem.paragraph(2);
 	await bodyInput!.fill(BODY);
 	await this.page.waitForTimeout(1000);
 });

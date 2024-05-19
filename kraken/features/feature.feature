@@ -1,1 +1,0 @@
-Feature: Base feature
