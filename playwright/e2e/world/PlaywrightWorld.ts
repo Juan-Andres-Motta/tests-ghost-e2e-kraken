@@ -39,7 +39,7 @@ export interface IPlaywrightWorld extends World {
  */
 class PlaywrightWorld extends World implements IPlaywrightWorld {
 	debug = false;
-	baseUrl = "https://ghostold.juanandresdeveloper.com/ghost/#/signin";
+	baseUrl = "https://ghost.juanandresdeveloper.com/ghost/#/signin";
 	browser!: Browser;
 	browserContext!: BrowserContext;
 	page!: Page;
