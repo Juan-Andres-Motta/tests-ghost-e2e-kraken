@@ -41,3 +41,6 @@ Para usuarios de Windows usar:
 $env:HEAD = "1"
 npm run cucumber
 ```
+
+## Nota
+El servidor de ghost puede presentar relentizaciones en el servicio lo que puede afectar las pruebas ocacionalmente
