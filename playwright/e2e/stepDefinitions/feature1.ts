@@ -8,7 +8,7 @@ const BASE_URL = "https://ghost.juanandresdeveloper.com/ghost/#/signin";
 // Scenario: Create a new post
 
 Given(
-	"un usuario que desea iniciar sesion",
+	"un usuario que desea iniciar sesion 1",
 	async function (this: IPlaywrightWorld) {
 		await this.page.goto(BASE_URL);
 		await this.page.waitForTimeout(1000);
@@ -16,7 +16,7 @@ Given(
 );
 
 When(
-	"ingresa {string} en el campo email",
+	"ingresa {string} en el campo email 1",
 	async function (this: IPlaywrightWorld, email: string) {
 		if (email === "pseudo") {
 			email = faker.internet.email();
@@ -30,7 +30,7 @@ When(
 );
 
 When(
-	"ingresa {string} en el campo password",
+	"ingresa {string} en el campo password 1",
 	async function (this: IPlaywrightWorld, password: string) {
 		if (password === "pseudo") {
 			password = faker.internet.email();
@@ -44,7 +44,7 @@ When(
 );
 
 When(
-	"el inicio de sesion es {string}",
+	"el inicio de sesion es {string} 1",
 	async function (this: IPlaywrightWorld, resultado: string) {
 		await this.page.getByRole("button", { name: /Sign in/i }).click();
 		if (resultado === "exitoso") {

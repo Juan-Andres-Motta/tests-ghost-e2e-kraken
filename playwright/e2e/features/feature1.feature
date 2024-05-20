@@ -1,10 +1,10 @@
 Feature: Tests playwright
 
     Scenario Outline: Login
-        Given un usuario que desea iniciar sesion
-        When ingresa '<email>' en el campo email
-        And ingresa '<password>' en el campo password
-        Then el inicio de sesion es '<status>'
+        Given un usuario que desea iniciar sesion 1
+        When ingresa '<email>' en el campo email 1
+        And ingresa '<password>' en el campo password 1
+        Then el inicio de sesion es '<status>' 1
 
         Examples:
         | email | password | status |
