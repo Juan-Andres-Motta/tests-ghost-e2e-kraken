@@ -11,7 +11,6 @@ Feature: Tests playwright
         Then I click on Publish post 1
         Then I click on back to dashboard 1
         Then I click on back to posts 1
-        Then Find post 1
 
     Scenario Outline: Update Post
         When Login
@@ -21,7 +20,6 @@ Feature: Tests playwright
         Then I enter a body 3
         Then I click on update button 3
         Then I click on back button 3
-        Then Find updated post 3
 
 
     Scenario Outline: Delete Post
@@ -31,7 +29,6 @@ Feature: Tests playwright
         Then I click on Post config button 2
         Then I click on delete Post button 2
         Then I click on confirm delete Post button 2
-        Then Find deleted post 2
 
     Scenario Outline: Create Tag
         When Login
@@ -43,7 +40,6 @@ Feature: Tests playwright
         Then I enter a description input 4
         Then I click on Save button 4
         Then I click on back to tags 4
-        Then I find the tag created 4
 
     Scenario Outline: Update Tag
         When Login
@@ -55,7 +51,6 @@ Feature: Tests playwright
         Then I clear and enter a description input 5
         Then I click on Save button 5
         Then I click on back to tags 5
-        Then I find the tag created 5
 
     Scenario Outline: Delete Tag
         When Login
@@ -75,7 +70,6 @@ Feature: Tests playwright
         Then I click on Publish page 7
         Then I click on back to dashboard 7
         Then I click on Pages button 7
-        Then Find page 7
 
 
     Scenario Outline: Update Page

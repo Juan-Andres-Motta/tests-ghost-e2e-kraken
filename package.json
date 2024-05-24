@@ -9,7 +9,9 @@
     "@faker-js/faker": "^8.4.1",
     "@types/node": "^20.12.7",
     "canvas": "^2.11.2",
+    "cypress": "^4.2.0",
     "dotenv": "^16.4.5",
+    "faker": "^4.1.0",
     "resemblejs": "^5.0.0",
     "typescript": "^5.4.5"
   },
@@ -19,6 +21,8 @@
   "devDependencies": {
     "@cucumber/cucumber": "^10.6.0",
     "@playwright/test": "^1.43.1",
+    "cypress-log-to-output": "^1.0.8",
+    "cypress-plugin-tab": "^1.0.5",
     "ts-node": "^10.9.2"
   },
   "scripts": {
@@ -26,6 +30,8 @@
     "cucumber:headed": "HEAD=1 cucumber-js",
     "cucumber:validacion": "cucumber-js --config cucumber-validacion.cjs",
     "cucumber:e2e": "cucumber-js --config cucumber-e2e.cjs",
-    "cucumber:vrt": "cucumber-js --config cucumber-vrt.cjs && node generateConfig.js && node resemble.js && backstop test"
+    "cucumber:vrt": "cucumber-js --config cucumber-vrt.cjs && node generateConfig.js && node resemble.js && backstop test",
+    "monkey": "npx cypress run --config-file ./pruebas-reconocimiento/monkey-config.json",
+    "smart-monkey": "npx cypress run --config-file ./pruebas-reconocimiento/smart-monkey-config.json"
   }
 }

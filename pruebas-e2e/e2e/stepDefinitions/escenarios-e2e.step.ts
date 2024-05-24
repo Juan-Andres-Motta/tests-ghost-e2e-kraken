@@ -160,7 +160,8 @@ Then("I click on Post button 3", async function (this: IPlaywrightWorld) {
 });
 
 Then("Find post 3", async function (this: IPlaywrightWorld) {
-  let postButton = await this.page.$("h3");
+  let postButtons = await this.page.$$("h3");
+  let postButton = postButtons.pop();
   await postButton!.click({ force: true });
   await this.page.waitForTimeout(2000);
 });
