@@ -189,7 +189,7 @@ Then("I click on update button 3", async function (this: IPlaywrightWorld) {
 });
 
 Then("I click on back button 3", async function (this: IPlaywrightWorld) {
-  let publishButton = await this.page.$("a.gh-editor-back-button");
+  let publishButton = await this.page.$('a[href="#/posts/"]');
   await publishButton!.click();
 });
 
@@ -519,7 +519,8 @@ Then("I click on page button 9", async function (this: IPlaywrightWorld) {
 });
 
 Then("Find page 9", async function (this: IPlaywrightWorld) {
-  let postButton = await this.page.$("h3");
+  let postButtons = await this.page.$$("h3");
+  let postButton = postButtons.pop();
   NAME = await postButton!.innerText();
   await postButton!.click();
   await this.page.waitForTimeout(1000);
@@ -572,6 +573,7 @@ Then(
 Then(
   "I clear and enter an accent color input 10",
   async function (this: IPlaywrightWorld) {
+    faker.seed(Math.random() * 1000);
     let tagColorInput = await this.page.$('input[aria-label="Color value"]');
     await tagColorInput!.fill(faker.internet.color().slice(1, 7));
     await this.page.waitForTimeout(1000);

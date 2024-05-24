@@ -69,7 +69,7 @@ Feature: Tests playwright
 
     Examples:
         | nombre | email | label | nota | status  |
-        | Jhon Doe 1 | jhon1@example.com | Ingeniero | Ingeniero tiktoker | fallido |
+        | Jhon Doe 1 | pseudo | Ingeniero | Ingeniero tiktoker | exitoso |
         |          |                  |           |                    | fallido |
         | Jhon Doe 2 | jhon2@example.com |           |                    | fallido |
         | Jhon Doe 3 |                  |           |                    | fallido |
@@ -77,10 +77,10 @@ Feature: Tests playwright
         |          |                  | Ingeniero |                    | fallido |
         |          |                  |           | Ingeniero tiktoker | fallido |
         | pseudo | pseudo           | Ingeniero | Ingeniero tiktoker | exitoso |
-        | pseudo   | pseudo           | pseudo    | pseudo             | fallido |
-        | pseudo   | pseudo           |           |                    | fallido |
+        | pseudo   | pseudo           | pseudo    | pseudo             | exitoso |
+        | pseudo   | pseudo           |           |                    | exitoso |
         | random   | random           |           |                    | fallido |
         | random   | random           | random    | random             | fallido |
         |          |                  | random    |                    | fallido |
         |          |                  |           | random             | fallido |
-        | Jhon Doe 5 | pseudo | Ingeniero | 123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890 | fallido |
+        | Jhon Doe 5 | pseudo | Ingeniero | 123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890 | fallido |
