@@ -1,15 +1,11 @@
-# Proyecto E2E
+# Entrega Final Pruebas Automatizadas
 
-# Integrantes
+# Grupo 24
 
 - Andres Duque - a.duquec@uniandes.edu.co
 - Juan Motta - ja.lopezm123@uniandes.edu.co
 
-## Instrucciones Semana 7
-
-## Playwright
-
-Este es un proyecto de automatización end-to-end (E2E) desarrollado utilizando Playwright, una plataforma de pruebas para aplicaciones web. El propósito de este proyecto es proporcionar un conjunto de pruebas automatizadas para garantizar la calidad y la integridad de Ghost.
+## Instrucciones
 
 ### Requisitos
 
@@ -17,30 +13,50 @@ Este es un proyecto de automatización end-to-end (E2E) desarrollado utilizando 
 
 ### Instalación
 
-1. Abrir la carpeta de playwright
+1. Instalar dependencias de node
 
 ```
-cd playwright
-```
-
-2. Instalar dependencias de node
-
-```bash
 npm install
 ```
 
-3. Ejecutar pruebas
+2. Instalar playwright en caso de no estar instalado
 
 ```
-npm run cucumber
+npx playwright install 
 ```
 
-Para usuarios de Windows usar:
+### Ejecución de Pruebas
+
+Si desea correr las pruebas en modo estándar vaya al archivo .env y asigne el valor de HEAD=1, en caso de querer correr las pruebas en modo headless asigne el valor de HEAD=0
+
+1. Pruebas de reconocimiento:
 
 ```
-$env:HEAD = "1"
-npm run cucumber
+npm run monkey
+```
+
+```
+npm run smart-monkey
+```
+
+2. Pruebas E2E
+
+```
+npm run cucumber:e2e
+```
+
+3. Pruebas VRT
+
+```
+npm run cucumber:vrt
+```
+
+4. Pruebas de validación
+
+```
+npm run cucumber:validacion
 ```
 
 ## Nota
-El servidor de ghost puede presentar relentizaciones en el servicio lo que puede afectar las pruebas ocacionalmente
+
+El servidor de ghost puede presentar relentizaciones en el servicio lo que puede afectar las pruebas ocasionalmente, si se llegan a experimentar fallos en las pruebas recomendamos volver a ejecutarlas en caso de que haya sido un problema del servidor de despliegue.
